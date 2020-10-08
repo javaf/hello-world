@@ -2,14 +2,15 @@ package io.github.javaf;
 import java.io.*;
 
 /**
- * I have a question for you.
+ * A "Hello, World!" program generally is a computer program that outputs
+ * or displays the message "Hello, World!".
  */
 public class HelloWorld {
 
   /**
-   * Asks a question.
+   * Here is a puzzle for you!
    * @param args command-line arguments
-   * @throws IOException input
+   * @throws IOException on exit
    */
   public static void main(String[] args) throws IOException {
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
