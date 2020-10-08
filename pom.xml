@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.javaf</groupId>
   <artifactId>hello-world</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>jar</packaging>
   
   <properties>
@@ -13,7 +13,10 @@
   </properties>
   
   <name>hello-world</name>
-  <description>I have a question for you.</description>
+  <description>
+    A "Hello, World!" program generally is a computer program that outputs
+    or displays the message "Hello, World!".
+  </description>
   <url>https://github.com/javaf/hello-world</url>
   <licenses>
     <license>
