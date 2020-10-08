@@ -2,6 +2,7 @@ A "Hello, World!" in an intorductory computer program that general displays
 "Hello, World!". [:package:] [:ledger:]
 
 ```java
+## OUTPUT
 What clothing does a house wear?
 <your answer>
 ```
