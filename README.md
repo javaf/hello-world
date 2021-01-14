@@ -67,6 +67,10 @@ What clothing does a house wear?
 
 <br>
 
+- [Use the Latest Version of a Dependency in Maven](https://www.baeldung.com/maven-dependency-latest-version)
+
+<br>
+
 - [How to get the source directory of a Bash script from within the script itself?](https://stackoverflow.com/a/246128/1413259)
 - [Unpacking index for Central Repository on Netbeans](https://stackoverflow.com/a/63012105/1413259)
 - [Maven Remote Search plugin](http://plugins.netbeans.org/plugin/68415/maven-remote-search)

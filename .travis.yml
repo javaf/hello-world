@@ -2,7 +2,6 @@
 # virt: lxd
 # os: linux
 # dist: focal
-sudo: false
 language: java
 cache:
   directories:
@@ -22,6 +21,6 @@ before_install:
 deploy:
   provider: script
   script: "mvn clean deploy"
-  skip_cleanup: true
+  cleanup: false
   on:
     branch: main
