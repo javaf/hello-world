@@ -16,5 +16,6 @@ install:
 - chmod 400 "$HOME/.ssh/id_rsa"
 
 script:
-- mvn -B deploy | grep -v "Download\(ing\|ed\) from "
-- mvn -B deploy -Dossrh | grep -v "Download\(ing\|ed\) from " || true
+- export MAVEN_OPTS="-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
+- mvn $MAVEN_OPTS -B deploy
+- mvn $MAVEN_OPTS -B deploy -Dossrh
