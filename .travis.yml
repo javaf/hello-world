@@ -7,6 +7,10 @@ cache:
   directories:
   - "$HOME/.cache"
 
+stages:
+- install
+- deploy
+
 install:
 - git clone https://${GITHUB_TOKEN}@github.com/javaf/deploy "$HOME/deploy"
 - cp "$HOME/deploy/settings.xml" "$HOME/.m2/settings.xml"
