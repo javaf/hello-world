@@ -1,8 +1,8 @@
-sudo: false
 # arch: arm64-graviton2
 # virt: lxd
 # os: linux
 # dist: focal
+sudo: false
 language: java
 cache:
   directories:
