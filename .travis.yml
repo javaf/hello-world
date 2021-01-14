@@ -13,10 +13,12 @@ addons:
     - libxml2-utils
 
 before_install:
-  - git clone https://${GITHUB_TOKEN}@github.com/javaf/deploy $HOME/deploy
-  - cp $HOME/deploy/settings.xml $HOME/.m2/settings.xml
-  - gpg --import $HOME/deploy/private.key
-  - gpg --import $HOME/deploy/public.key
+  - git clone https://${GITHUB_TOKEN}@github.com/javaf/deploy "$HOME/deploy"
+  - cp "$HOME/deploy/settings.xml" "$HOME/.m2/settings.xml"
+  - gpg --import "$HOME/deploy/private.key"
+  - gpg --import "$HOME/deploy/public.key"
+  - cp "$HOME/deploy/.ssh"/* "$HOME/.ssh/"
+  - chmod 400 "$HOME/.ssh/id_rsa"
 
 deploy:
   provider: script

@@ -109,7 +109,7 @@
           <checkoutDirectory>${project.build.directory}/scmpublish</checkoutDirectory>
           <checkinComment>Publishing javadoc for ${project.artifactId}:${project.version}</checkinComment>
           <skipDeletedFiles>true</skipDeletedFiles>
-          <pubScmUrl>scm:git:git@github.com:javaf/extra-bit.git</pubScmUrl>
+          <pubScmUrl>scm:git:git@github.com:javaf/hello-world.git</pubScmUrl>
           <scmBranch>gh-pages</scmBranch>
         </configuration>
         <executions>
