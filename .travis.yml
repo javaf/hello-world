@@ -27,7 +27,7 @@ install:
 
 deploy:
   provider: script
-  script: "mvn -B deploy"
+  script: "mvn --batch-mode --no-transfer-progress deploy"
   cleanup: false
   on:
     branch: main
