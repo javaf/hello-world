@@ -7,11 +7,6 @@ cache:
   directories:
   - "$HOME/.cache"
 
-addons:
-  apt:
-    packages:
-    - libxml2-utils
-
 before_install:
 - git clone https://${GITHUB_TOKEN}@github.com/javaf/deploy "$HOME/deploy"
 - cp "$HOME/deploy/settings.xml" "$HOME/.m2/settings.xml"
@@ -27,7 +22,7 @@ install:
 
 deploy:
   provider: script
-  script: "mvn --batch-mode --no-transfer-progress deploy"
+  script: "mvn -B deploy"
   cleanup: false
   on:
     branch: main
