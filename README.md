@@ -5,6 +5,7 @@ Consider this as a template for:
 - Writing Maven project.
 - Creating test cases.
 - Set up [package information](pom.xml).
+- Set up [global settings](global/settings.xml).
 - Auto generate sources, javadoc JAR.
 - Auto sign package with GPG.
 - Auto deploy to Maven Central Respository.
