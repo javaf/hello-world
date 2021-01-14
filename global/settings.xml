@@ -16,10 +16,9 @@
   </servers>
  
 
-
   <profiles>
     <profile>
-      <id>github</id>
+      <id>default</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
@@ -29,10 +28,6 @@
           <url>https://maven.pkg.github.com/javaf/hello-world</url>
         </repository>
       </repositories>
-    </profile>
-
-    <profile>
-      <id>ossrh</id>
       <properties>
         <gpg.executable>gpg</gpg.executable>
         <gpg.passphrase>GPG_PASSWORD</gpg.passphrase>
