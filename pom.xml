@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.javaf</groupId>
   <artifactId>hello-world</artifactId>
-  <version>1.0.31</version>
+  <version>1.0.36</version>
   <packaging>jar</packaging>
   
   <!-- Use JDK 11 -->
@@ -116,9 +116,9 @@
           <content>${project.build.directory}/apidocs</content>
           <checkoutDirectory>${project.build.directory}/scmpublish</checkoutDirectory>
           <checkinComment>Publishing javadoc for ${project.artifactId}:${project.version}</checkinComment>
-          <skipDeletedFiles>true</skipDeletedFiles>
           <pubScmUrl>scm:git:git@github.com:javaf/hello-world.git</pubScmUrl>
           <scmBranch>gh-pages</scmBranch>
+          <skipDeletedFiles>true</skipDeletedFiles>
         </configuration>
         <executions>
           <execution>

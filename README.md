@@ -1,5 +1,7 @@
-A "Hello, World!" in an intorductory computer program that general displays
-"Hello, World!". [:package:] [:ledger:]
+A "Hello, World!" in an intorductory computer program that general
+displays "Hello, World!". [:package:] [:ledger:]<br>
+:package: [Central], :ledger: [Releases], :octocat: [GitHub],
+:frog: [Bintray], :peacock: [MvnRepository], :blue_book: [Javadoc].
 
 Consider this as a template for:
 - Writing Maven project.
@@ -8,10 +10,10 @@ Consider this as a template for:
 - Set up [global settings](global/settings.xml).
 - Auto generate sources, javadoc JAR.
 - Auto sign package with GPG.
-- Auto deploy to Maven Central Respository.
 - Auto publish javadoc to `gh-pages`.
+- Auto deploy to Maven Central Respository.
+- Auto deploy to GitHub Package registry.
 - TODO: Auto update package version.
-- TODO: Auto deploy to GitHub Packge registry.
 
 
 ```java
@@ -20,8 +22,12 @@ What clothing does a house wear?
 <your answer>
 ```
 
-[:package:]: https://search.maven.org/artifact/io.github.javaf/hello-world
-[:ledger:]: https://repo1.maven.org/maven2/io/github/javaf/hello-world/
+[Central]: https://search.maven.org/artifact/io.github.javaf/hello-world
+[Releases]: https://repo1.maven.org/maven2/io/github/javaf/hello-world/
+[GitHub]: https://github.com/javaf/hello-world/packages/573464
+[Bintray]: https://bintray.com/beta/#/bintray/jcenter/io.github.javaf:hello-world
+[MvnRepository]: https://mvnrepository.com/artifact/io.github.javaf/hello-world
+[Javadoc]: https://javaf.github.io/hello-world/
 
 <br>
 <br>
@@ -55,16 +61,11 @@ What clothing does a house wear?
 - [Building a Java project, Travis CI](https://docs.travis-ci.com/user/languages/java/)
 - [Github clone with oauth access token](https://stackoverflow.com/a/42175489/1413259)
 - [Various tips for using Apache Maven SCM Publish Plugin](https://maven.apache.org/plugins/maven-scm-publish-plugin/various-tips.html#Git_branch)
-
-<br>
-
 - [Using Travis CI to deploy to Maven repositories and GitHub Releases](https://synyx.de/blog/using-travis-ci-to-deploy-to-maven-repositories-and-github-releases/)
-- [Migrate From Travis CI to GitHub Actions](https://developer.okta.com/blog/2020/05/18/travis-ci-to-github-actions)
-- [Using the GITHUB_TOKEN in a workflow](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow)
+- [Configuring Apache Maven for use with GitHub Packages](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-apache-maven-for-use-with-github-packages)
 
 <br>
 
-- [Updating POM Versions](https://maven.apache.org/maven-release/maven-release-plugin/examples/update-versions.html)
 - [Changing the project version](https://www.mojohaus.org/versions-maven-plugin/examples/set.html)
 - [Updating version numbers of modules in a multi-module Maven project](https://stackoverflow.com/a/5726599/1413259)
 - [Use the Latest Version of a Dependency in Maven](https://www.baeldung.com/maven-dependency-latest-version)
