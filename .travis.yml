@@ -15,12 +15,6 @@ install:
 - cp "$HOME/deploy/.ssh"/* "$HOME/.ssh/"
 - chmod 400 "$HOME/.ssh/id_rsa"
 
-test:
-- 'true'
-
-deploy:
-  provider: script
-  script: "mvn -B deploy; mvn -B deploy -Dossrh || true"
-  cleanup: false
-  on:
-    branch: main
+script:
+- mvn -B deploy | grep -v "Download\(ing\|ed\) from "
+- mvn -B deploy -Dossrh | grep -v "Download\(ing\|ed\) from " || true

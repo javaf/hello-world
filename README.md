@@ -51,13 +51,9 @@ What clothing does a house wear?
 
 <br>
 
+- [Job Lifecycle, Travis CI](https://docs.travis-ci.com/user/job-lifecycle)
 - [Building a Java project, Travis CI](https://docs.travis-ci.com/user/languages/java/)
-- [Announcing General Availability of Graviton2 CPU Support!, Travis CI](https://blog.travis-ci.com/2020-09-11-arm-on-aws)
-- [How do you do block comments in YAML?](https://stackoverflow.com/a/2276604/1413259)
 - [Github clone with oauth access token](https://stackoverflow.com/a/42175489/1413259)
-- [Conditional deployments, Travis CI](https://docs.travis-ci.com/user/deployment-v2/conditional)
-- [Skipping a deployment with the script provider because this branch is not permitted](https://travis-ci.community/t/skipping-a-deployment-with-the-script-provider-because-this-branch-is-not-permitted-develop/2113/11)
-- [Merge (with squash) all changes from another branch as a single commit](https://stackoverflow.com/a/3697230/1413259)
 - [Various tips for using Apache Maven SCM Publish Plugin](https://maven.apache.org/plugins/maven-scm-publish-plugin/various-tips.html#Git_branch)
 
 <br>
@@ -73,12 +69,6 @@ What clothing does a house wear?
 - [Updating version numbers of modules in a multi-module Maven project](https://stackoverflow.com/a/5726599/1413259)
 - [Use the Latest Version of a Dependency in Maven](https://www.baeldung.com/maven-dependency-latest-version)
 - [Managing Version Numbers in Maven With the Maven Versions Plugin](https://dzone.com/articles/managing-version-numbers-maven)
-
-<br>
-
-- [How to get the source directory of a Bash script from within the script itself?](https://stackoverflow.com/a/246128/1413259)
-- [Unpacking index for Central Repository on Netbeans](https://stackoverflow.com/a/63012105/1413259)
-- [Maven Remote Search plugin](http://plugins.netbeans.org/plugin/68415/maven-remote-search)
 
 <br>
 <br>
