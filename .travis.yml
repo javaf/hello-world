@@ -22,7 +22,7 @@ install:
 
 deploy:
   provider: script
-  script: "mvn -B deploy"
+  script: "mvn -B deploy; mvn -B deploy -Dossrh || true"
   cleanup: false
   on:
     branch: main
