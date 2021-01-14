@@ -7,10 +7,6 @@ cache:
   directories:
   - "$HOME/.cache"
 
-stages:
-- install
-- deploy
-
 install:
 - git clone https://${GITHUB_TOKEN}@github.com/javaf/deploy "$HOME/deploy"
 - cp "$HOME/deploy/settings.xml" "$HOME/.m2/settings.xml"
@@ -18,6 +14,9 @@ install:
 - gpg --import "$HOME/deploy/public.key"
 - cp "$HOME/deploy/.ssh"/* "$HOME/.ssh/"
 - chmod 400 "$HOME/.ssh/id_rsa"
+
+test:
+- 'true'
 
 deploy:
   provider: script
