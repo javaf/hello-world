@@ -58,6 +58,7 @@ What clothing does a house wear?
 - [Conditional deployments, Travis CI](https://docs.travis-ci.com/user/deployment-v2/conditional)
 - [Skipping a deployment with the script provider because this branch is not permitted](https://travis-ci.community/t/skipping-a-deployment-with-the-script-provider-because-this-branch-is-not-permitted-develop/2113/11)
 - [Merge (with squash) all changes from another branch as a single commit](https://stackoverflow.com/a/3697230/1413259)
+- [Various tips for using Apache Maven SCM Publish Plugin](https://maven.apache.org/plugins/maven-scm-publish-plugin/various-tips.html#Git_branch)
 
 <br>
 
@@ -67,7 +68,11 @@ What clothing does a house wear?
 
 <br>
 
+- [Updating POM Versions](https://maven.apache.org/maven-release/maven-release-plugin/examples/update-versions.html)
+- [Changing the project version](https://www.mojohaus.org/versions-maven-plugin/examples/set.html)
+- [Updating version numbers of modules in a multi-module Maven project](https://stackoverflow.com/a/5726599/1413259)
 - [Use the Latest Version of a Dependency in Maven](https://www.baeldung.com/maven-dependency-latest-version)
+- [Managing Version Numbers in Maven With the Maven Versions Plugin](https://dzone.com/articles/managing-version-numbers-maven)
 
 <br>
 
