@@ -1,11 +1,19 @@
-A "Hello, World!" in an intorductory computer program that general
-displays "Hello, World!". [:package:] [:ledger:]<br>
-:package: [Central], :ledger: [Releases], :octocat: [GitHub],
-:frog: [Bintray], :peacock: [MvnRepository], :blue_book: [Javadoc].
+A "Hello, World!" is an introductory computer program.<br>
+:package: [Central](https://search.maven.org/artifact/io.github.javaf/hello-world),
+:scroll: [Releases](https://repo1.maven.org/maven2/io/github/javaf/hello-world/),
+:smiley_cat: [GitHub](https://github.com/javaf/hello-world/packages/573464),
+:frog: [Bintray](https://bintray.com/beta/#/bintray/jcenter/io.github.javaf:hello-world),
+:peacock: [MvnRepository](https://mvnrepository.com/artifact/io.github.javaf/hello-world),
+:newspaper: [Javadoc](https://javaf.github.io/hello-world/),
+:blue_book: [Wiki](https://github.com/javaf/hello-world/wiki).
 
-Consider this as a template for:
-- Writing Maven project.
-- Creating test cases.
+> Stability: Experimental.
+
+<br>
+
+Consider this as a template to:
+- Write Maven project.
+- Create test cases.
 - Set up [package information](pom.xml).
 - Set up [global settings](global/settings.xml).
 - Auto generate sources, javadoc JAR.
@@ -15,6 +23,7 @@ Consider this as a template for:
 - Auto deploy to GitHub Package registry.
 - TODO: Auto update package version.
 
+<br>
 
 ```java
 ## OUTPUT
@@ -22,12 +31,31 @@ What clothing does a house wear?
 <your answer>
 ```
 
-[Central]: https://search.maven.org/artifact/io.github.javaf/hello-world
-[Releases]: https://repo1.maven.org/maven2/io/github/javaf/hello-world/
-[GitHub]: https://github.com/javaf/hello-world/packages/573464
-[Bintray]: https://bintray.com/beta/#/bintray/jcenter/io.github.javaf:hello-world
-[MvnRepository]: https://mvnrepository.com/artifact/io.github.javaf/hello-world
-[Javadoc]: https://javaf.github.io/hello-world/
+```java
+import io.github.javaf.*;
+
+HelloWorld.imply(true, false);
+// false
+
+HelloWorld.eq(false, false);
+// true
+```
+
+<br>
+<br>
+
+
+## Index
+
+| Method   | Action                                |
+| -------- | ------------------------------------- |
+| [and]    | Check if all values are true.         |
+| [eq]     | Check if antecedent ⇔ consequent.     |
+| [imply]  | Check if antecedent ⇒ consequent.     |
+
+[and]: https://github.com/javaf/hello-world/wiki/and
+[eq]: https://github.com/javaf/hello-world/wiki/eq
+[imply]: https://github.com/javaf/hello-world/wiki/imply
 
 <br>
 <br>
@@ -35,19 +63,25 @@ What clothing does a house wear?
 
 ## References
 
+### Which JDK
+
 - [JDK, JRE, JVM: What Are They and What Are Their Differences?](https://www.youtube.com/watch?v=BXFHuaQNnLo)
 - [Java Development Kit: What Version of the JDK Should You Use?](https://www.youtube.com/watch?v=HqU0TF4XNbM)
 
 <br>
 
-- [Maven central repository search](https://search.maven.org)
-- [Maven Repository: Search/Browse/Explore](https://mvnrepository.com)
+
+### Setup deploy
+
 - [Publish JAR To Central Maven Repository, Jakob Jenkov](http://tutorials.jenkov.com/maven/publish-to-central-maven-repository.html)
 - [OSSRH Guide, Sonatype Central Repository](https://central.sonatype.org/pages/ossrh-guide.html)
 - [Sonatype issues: Account management](https://issues.sonatype.org)
 - [Nexus repository manager](https://oss.sonatype.org)
 
 <br>
+
+
+### Sign package
 
 - [OpenPGP KeyServer](https://keys.openpgp.org)
 - [Working with PGP Signatures](https://central.sonatype.org/pages/working-with-pgp-signatures.html)
@@ -57,6 +91,9 @@ What clothing does a house wear?
 
 <br>
 
+
+### Auto deploy
+
 - [Job Lifecycle, Travis CI](https://docs.travis-ci.com/user/job-lifecycle)
 - [Building a Java project, Travis CI](https://docs.travis-ci.com/user/languages/java/)
 - [Github clone with oauth access token](https://stackoverflow.com/a/42175489/1413259)
@@ -65,6 +102,9 @@ What clothing does a house wear?
 - [Configuring Apache Maven for use with GitHub Packages](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-apache-maven-for-use-with-github-packages)
 
 <br>
+
+
+### Update version
 
 - [Changing the project version](https://www.mojohaus.org/versions-maven-plugin/examples/set.html)
 - [Updating version numbers of modules in a multi-module Maven project](https://stackoverflow.com/a/5726599/1413259)

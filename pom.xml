@@ -2,34 +2,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <!-- Define Package -->
+  <!-- Avoid "dependency hell" with semantic versioning -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.javaf</groupId>
   <artifactId>hello-world</artifactId>
-  <version>1.0.36</version>
+  <version>1.2.0</version>
   <packaging>jar</packaging>
-  
+
   <!-- Use JDK 11 -->
+  <!-- Comes with Long Term Support (LTS) -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
-  
+
   <!-- Provide Details -->
   <name>hello-world</name>
   <description>
-    A "Hello, World!" in an intorductory computer program that general displays
-    "Hello, World!".
+    A "Hello, World!" is an introductory computer program.
   </description>
   <url>https://github.com/javaf/hello-world</url>
-  
+
   <licenses>
     <license>
       <name>MIT License</name>
       <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
-  
+
   <developers>
     <developer>
       <id>wolfram77</id>
@@ -38,7 +39,7 @@
       <url>https://github.com/wolfram77</url>
     </developer>
   </developers>
-  
+
   <scm>
     <url>git@github.com:javaf/hello-world.git</url>
     <connection>scm:git:git@github.com:javaf/hello-world.git</connection>
@@ -48,6 +49,7 @@
 
 
   <!-- GitHub Packages -->
+  <!-- See settings.xml for server (github) credentials -->
   <distributionManagement>
     <repository>
       <id>github</id>
@@ -145,8 +147,9 @@
           <name>ossrh</name>
         </property>
       </activation>
-      
+
       <!-- Maven Central Repository -->
+      <!-- See settings.xml for server (ossrh) credentials -->
       <distributionManagement>
         <snapshotRepository>
           <id>ossrh</id>
@@ -157,7 +160,7 @@
           <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
       </distributionManagement>
-      
+
       <build>
         <plugins>
           <!-- Deploy to Maven Central Repository -->
@@ -176,8 +179,8 @@
         </plugins>
       </build>
     </profile>
-    
-    
+
+
     <!-- Deploy to GitHub Packages & create Release -->
     <!-- $ mvn clean deploy -Drelease -->
     <profile>
@@ -187,7 +190,7 @@
           <name>release</name>
         </property>
       </activation>
-      
+
       <!-- GitHub Release plugin source -->
       <pluginRepositories>
         <pluginRepository>
