@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.javaf</groupId>
   <artifactId>hello-world</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
   <packaging>jar</packaging>
   
   <properties>
@@ -34,6 +34,7 @@
       <url>https://github.com/wolfram77</url>
     </developer>
   </developers>
+  
   <scm>
     <connection>scm:git:git@github.com:javaf/hello-world.git</connection>
     <developerConnection>scm:git:git@github.com:javaf/hello-world.git</developerConnection>
@@ -106,4 +107,25 @@
       </plugin>
     </plugins>
   </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.6.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>
