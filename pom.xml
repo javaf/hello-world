@@ -131,6 +131,7 @@
         <configuration>
           <serverId>ossrh</serverId>
           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <keepStagingRepositoryOnFailure>true</keepStagingRepositoryOnFailure>
           <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
       </plugin>

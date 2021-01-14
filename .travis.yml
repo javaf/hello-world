@@ -27,7 +27,7 @@ install:
 
 deploy:
   provider: script
-  script: "mvn clean deploy"
+  script: "mvn -B deploy"
   cleanup: false
   on:
     branch: main
