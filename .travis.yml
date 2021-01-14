@@ -23,3 +23,5 @@ deploy:
   provider: script
   script: "mvn clean deploy"
   skip_cleanup: true
+  on:
+    branch: main
