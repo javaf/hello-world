@@ -117,3 +117,4 @@ HelloWorld.eq(false, false);
 [![](https://img.youtube.com/vi/qNS2jj2w-GI/maxresdefault.jpg)](https://www.youtube.com/watch?v=qNS2jj2w-GI)
 
 ![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/javaf/hello-world)
+![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/moocf/hello-world.java)
